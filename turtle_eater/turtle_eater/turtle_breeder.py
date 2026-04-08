@@ -161,7 +161,7 @@ class TurtleBreeder(Node):
         # Creates subscriptions for any new turtles that do not have existing subscriptions
         for i in range(len(turtle_name)):
             if turtle_name[i] not in self.subs:
-                self.Pose_callback(turtle_name[i])
+                self.Spawn_callback(turtle_name[i])
 
         # Spawns new turtles if total alive turtles are less than 6
         if len(turtle_name)<6:
